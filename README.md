@@ -6,8 +6,8 @@
 2. Run `src/main/java/com/mhexercise/librarycrud/LibrarycrudApplication.java`.
 
 ### Frontend
-1. In the directory "librarycrud/frontend," run `npm install`.
-2. In the directory "librarycrud/frontend," run `npm start`.
+1. In the directory "librarycrud/frontend," run `npm install` in terminal.
+2. In the directory "librarycrud/frontend," run `npm start` in terminal.
 3. Subsequently, it's possible to enter the address `localhost:3000` in a browser.
 
 ### Application Configuration
