@@ -86,16 +86,12 @@ class BooksList extends Component {
 
     render() {
         const {books} = this.state;
-
-
         const booksList = books.map(book => {
-
-
-
             return <tr key={book.id}>
                 <td style={{whiteSpace: 'nowrap'}}>{book.name}</td>
                 <td>{book.author}</td>
-                <td>{this.isLoaned(book) ? "Yes" : "No"}</td>
+                <td>{this.isLoaned(book) ? "Yes ( to " + book.loan.person.firstName + " "
+                                                     + book.loan.person.lastName + " from " + book.loan.borrowedFrom + " )"  : "No"}</td>
                 <td>
                     <ButtonGroup>
                         <Button size="sm" color="primary" tag={Link} to={"/books/edit/" + book.id}>Edit</Button>
